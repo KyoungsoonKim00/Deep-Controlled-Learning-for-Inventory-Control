@@ -1,0 +1,19 @@
+[env] LostSales Poisson mean=5 τ=3 h=1 p=9 | I_max=26 m=8
+
+[0] 정확 최적해 (relative value iteration)
+  v* = 6.5314 (수렴 31 iters)
+
+[1] 기준 정책 평가 (avg cost/period, 400run x 2000period)
+  Optimal(sim) 6.5195+-0.0169  gap -0.18%  (검증: v*~=6.5314)
+  BSP*(23)     6.8021  gap +4.15%
+  CBS*(24,6)   6.6018  gap +1.08%
+
+[2] DCL 학습 (N=2000 M=500 H=40 L=100 n=3 w=12)
+
+[3] DCL 평가 (optimality gap)
+  DCL gen1  6.5318±0.0166  gap +0.01%  (vs CBS* -1.06%)
+  DCL gen2  6.6249±0.0163  gap +1.43%  (vs CBS* +0.35%)
+  DCL gen3  6.5583±0.0165  gap +0.41%  (vs CBS* -0.66%)
+
+[결과] DCL best gen1=6.5318 | optimality gap +0.01% | 논문 목표 ≤0.2%
+[시간] 8421s

@@ -1,0 +1,17 @@
+[env] LostSales Poisson mean=5 tau=3 h=1 p=9 | I_max=20 m=8 num_actions=9
+
+[1] 휴리스틱 최적화
+  BSP*  S=23            avg_cost=6.7930
+  CBS*  S=24 cap=6      avg_cost=6.5950
+
+[2] DCL 학습 (N=800, M=60, H=30, L=60, n=3, w=10)
+
+[3] 평가 비교 (avg cost/period, 300 run x 1500 period)
+  BSP*        6.7930 +- 0.0231
+  CBS*        6.5950 +- 0.0213   (vs BSP* -2.91%)
+  DCL gen1   7.9358 +- 0.0341   (vs CBS* +20.33% | vs BSP* +16.82%)
+  DCL gen2   7.9358 +- 0.0341   (vs CBS* +20.33% | vs BSP* +16.82%)
+  DCL gen3   7.9358 +- 0.0341   (vs CBS* +20.33% | vs BSP* +16.82%)
+
+[결과] DCL best = gen1 (7.9358). CBS* 대비 +20.33%, BSP* 대비 +16.82%.
+[시간] 총 427.5s

@@ -1,0 +1,15 @@
+[env] LostSales Poisson mean=5 tau=3 h=1 p=9 | I_max=20 m=8
+
+[휴리스틱] BSP*(S=23) 6.8161±0.0318 | CBS*(S=24,cap=6) 6.6155±0.0290
+
+[DCL] N=800 M=400 H=40 L=80 n=3 w=10 (B1 수정: 세대별 새 분류기)
+
+[평가]
+  BSP*      6.8161
+  CBS*      6.6155
+  DCL gen1  7.9318±0.0470  (vs CBS* +19.90% | vs BSP* +16.37%)
+  DCL gen2  7.9279±0.0468  (vs CBS* +19.84% | vs BSP* +16.31%)
+  DCL gen3  7.9262±0.0471  (vs CBS* +19.81% | vs BSP* +16.29%)
+
+[결과] DCL best gen3=7.9262 | CBS* 대비 +19.81%
+[시간] 2244.4s

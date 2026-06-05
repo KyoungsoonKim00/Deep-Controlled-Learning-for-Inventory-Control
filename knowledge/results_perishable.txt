@@ -1,0 +1,12 @@
+[env] Perishable ml=3 τ=1 h=1 p=10 w=7 mean=4 FIFO | I_max=16 m=7
+[휴리스틱] BSP* S=11 cost=5.5635
+
+[DCL] N=800 M=250 H=40 L=80 n=3 w=6
+
+[평가]
+  BSP*(S=11)  5.5635
+  DCL gen1   5.9383+-0.0345  (vs BSP* +6.74%)
+  DCL gen2   5.4775+-0.0286  (vs BSP* -1.55%)
+  DCL gen3   5.4827+-0.0287  (vs BSP* -1.45%)
+
+[결과] DCL best gen2=5.4775 | BSP* 대비 -1.55% | 6052s

@@ -1,0 +1,11 @@
+[env] I_max=26 (수정후) m=8 num_actions=9
+[휴리스틱] BSP*(23)=6.8161 | CBS*(24,6)=6.6155
+
+[DCL] N=800 M=250 H=40 L=80 n=3 w=10
+
+[평가]
+  DCL gen1  6.5668±0.0312  (vs CBS* -0.74% | vs BSP* -3.66%)
+  DCL gen2  6.5727±0.0329  (vs CBS* -0.65% | vs BSP* -3.57%)
+  DCL gen3  6.5686±0.0300  (vs CBS* -0.71% | vs BSP* -3.63%)
+
+[결과] DCL best gen1=6.5668 | CBS* 대비 -0.74% | 시간 1937s

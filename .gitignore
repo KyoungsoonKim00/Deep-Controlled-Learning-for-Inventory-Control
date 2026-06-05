@@ -1,0 +1,16 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# 대용량/중복 산출물
+# PDF 버전(PPT_DCL_for_Inventory_Control.pdf)으로 대체
+docs/*.pptx
+# cp949 콘솔 덤프, results_*.txt(clean)와 중복
+knowledge/run*log.txt
+
+# 환경
+.venv/
+venv/
+.env
